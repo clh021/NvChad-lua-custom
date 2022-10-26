@@ -12,9 +12,13 @@ return {
     end,
   },
 
+  -- https://github.com/wbthomason/packer.nvim#specifying-plugins
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
     override_options = overrides.treesitter,
+    config = function()
+        require("nvim-treesitter.install").prefer_git = true
+    end,
   },
 
   ["williamboman/mason.nvim"] = {
