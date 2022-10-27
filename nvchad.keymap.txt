@@ -1,0 +1,182 @@
+
+
+
+n  <Space>rh   *@<Lua function 52>
+                 Reset hunk
+	Last set from Lua
+n  <Space>td   *@<Lua function 264>
+                 Toggle deleted
+	Last set from Lua
+n  <Space>gb   *@<Lua function 263>
+                 Blame line
+	Last set from Lua
+n  <Space>ph   *@<Lua function 273>
+                 Preview hunk
+	Last set from Lua
+n  [c          *@<Lua function 262>
+                 Jump to prev hunk
+	Last set from Lua
+n  ]c          *@<Lua function 265>
+                 Jump to next hunk
+	Last set from Lua
+n  <C-C>       * <Cmd> %y+ <CR>
+                 copy whole file
+	Last set from Lua
+n  <C-H>       * <C-W>h
+                 window left
+	Last set from Lua
+s  <Tab>       * <Lua function 506>
+                 cmp.utils.keymap.set_map
+	Last set from Lua
+n  <Tab>       * <Lua function 33>
+                 goto next buffer
+	Last set from Lua
+n  <NL>        * <C-W>j
+                 window down
+	Last set from Lua
+n  <C-K>       * <C-W>k
+                 window up
+	Last set from Lua
+n  <C-L>       * <C-W>l
+                 window right
+	Last set from Lua
+n  <C-N>       * <Cmd> NvimTreeToggle <CR>
+                 toggle nvimtree
+	Last set from Lua
+n  <C-S>       * <Cmd> w <CR>
+                 save file
+	Last set from Lua
+n  <Esc>       * <Cmd> noh <CR>
+                 no highlight
+	Last set from Lua
+n  <Space>x    * <Lua function 38>
+                 close buffer
+	Last set from Lua
+n  <Space>v    * <Lua function 28>
+                 new vertical term
+	Last set from Lua
+n  <Space>h    * <Lua function 25>
+                 new horizontal term
+	Last set from Lua
+n  <Space>cc   * <Lua function 10>
+                 Jump to current_context
+	Last set from Lua
+n  <Space>fb   * <Cmd> Telescope buffers <CR>
+                 find buffers
+	Last set from Lua
+n  <Space>gt   * <Cmd> Telescope git_status <CR>
+                 git status
+	Last set from Lua
+n  <Space>fw   * <Cmd> Telescope live_grep <CR>
+                 live grep
+	Last set from Lua
+n  <Space>cm   * <Cmd> Telescope git_commits <CR>
+                 git commits
+	Last set from Lua
+n  <Space>fa   * <Cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>
+                 find all
+	Last set from Lua
+n  <Space>tk   * <Cmd> Telescope keymaps <CR>
+                 show keys
+	Last set from Lua
+n  <Space>ff   * <Cmd> Telescope find_files <CR>
+                 find files
+	Last set from Lua
+n  <Space>fo   * <Cmd> Telescope oldfiles <CR>
+                 find oldfiles
+	Last set from Lua
+n  <Space>th   * <Cmd> Telescope themes <CR>
+                 nvchad themes
+	Last set from Lua
+n  <Space>fh   * <Cmd> Telescope help_tags <CR>
+                 help page
+	Last set from Lua
+n  <Space>pt   * <Cmd> Telescope terms <CR>
+                 pick hidden term
+	Last set from Lua
+n  <Space>/    * <Lua function 9>
+                 toggle comment
+	Last set from Lua
+v  <Space>/    * <Esc><Cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>
+                 toggle comment
+	Last set from Lua
+n  <Space>e    * <Cmd> NvimTreeFocus <CR>
+                 focus nvimtree
+	Last set from Lua
+n  <Space>uu   * <Cmd> :NvChadUpdate <CR>
+                 update nvchad
+	Last set from Lua
+n  <Space>tt   * <Lua function 5>
+                 toggle theme
+	Last set from Lua
+n  <Space>b    * <Cmd> enew <CR>
+                 new buffer
+	Last set from Lua
+n  <Space>rn   * <Cmd> set rnu! <CR>
+                 toggle relative number
+	Last set from Lua
+n  <Space>n    * <Cmd> set nu! <CR>
+                 toggle line number
+	Last set from Lua
+n  ;           * :
+                 command mode
+	Last set from Lua
+n  Y           * y$
+n  \           * <Cmd> TbufPick <CR>
+                 Pick buffer
+	Last set from Lua
+   gb          * <Cmd>lua require("packer.load")({'Comment.nvim'}, { keys = "gb", prefix = "" }, _G.packer_plugins)<CR>
+	Last set from Lua
+   gc          * <Cmd>lua require("packer.load")({'Comment.nvim'}, { keys = "gc", prefix = "" }, _G.packer_plugins)<CR>
+	Last set from Lua
+n  j           * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+	Last set from Lua
+x  j           * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+	Last set from Lua
+n  k           * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+	Last set from Lua
+x  k           * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+	Last set from Lua
+x  p           * p:let @+=@0<CR>:let @"=@0<CR>
+	Last set from Lua
+s  <S-Tab>     * <Lua function 520>
+                 cmp.utils.keymap.set_map
+	Last set from Lua
+s  <Plug>luasnip-jump-prev * <Cmd>lua require'luasnip'.jump(-1)<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 19
+s  <Plug>luasnip-jump-next * <Cmd>lua require'luasnip'.jump(1)<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 18
+s  <Plug>luasnip-prev-choice * <Cmd>lua require'luasnip'.change_choice(-1)<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 17
+s  <Plug>luasnip-next-choice * <Cmd>lua require'luasnip'.change_choice(1)<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 16
+s  <Plug>luasnip-expand-snippet * <Cmd>lua require'luasnip'.expand()<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 15
+s  <Plug>luasnip-expand-or-jump * <Cmd>lua require'luasnip'.expand_or_jump()<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 14
+   <Plug>luasnip-expand-repeat * <Cmd>lua require'luasnip'.expand_repeat()<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 11
+   <Plug>luasnip-delete-check * <Cmd>lua require'luasnip'.unlink_current_if_deleted()<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/LuaSnip/plugin/luasnip.vim line 8
+n  <Plug>PlenaryTestFile * :lua require('plenary.test_harness').test_directory(vim.fn.expand("%:p"))<CR>
+	Last set from ~/.local/share/nvim/site/pack/packer/opt/plenary.nvim/plugin/plenary.vim line 9
+n  <S-Tab>     * <Lua function 32>
+                 goto prev buffer
+	Last set from Lua
+n  <M-v>       * <Lua function 27>
+                 toggle vertical term
+	Last set from Lua
+n  <M-h>       * <Lua function 26>
+                 toggle horizontal term
+	Last set from Lua
+n  <M-i>       * <Lua function 11>
+                 toggle floating term
+	Last set from Lua
+n  <Up>        * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+	Last set from Lua
+n  <Down>      * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+	Last set from Lua
+v  <Down>      * v:count || mode(1)[0:1] == "no" ? "j" : "gj"
+	Last set from Lua
+v  <Up>        * v:count || mode(1)[0:1] == "no" ? "k" : "gk"
+	Last set from Lua
