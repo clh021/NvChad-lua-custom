@@ -1,13 +1,33 @@
 local M = {}
 
 M.treesitter = {
+  auto_install = true,
   ensure_installed = {
-    "vim",
-    "lua",
-    "html",
-    "css",
-    "typescript",
+    "bash",
     "c",
+    "cmake",
+    "cpp",
+    "css",
+    "diff",
+    "dockerfile",
+    "gitignore",
+    "go",
+    "html",
+    "javascript",
+    "json",
+    "lua",
+    "make",
+    "markdown",
+    "markdown_inline",
+    "php",
+    "proto",
+    "python",
+    "scss",
+    "sql",
+    "typescript",
+    "vim",
+    "vue",
+    "yaml",
   },
 }
 
@@ -21,7 +41,11 @@ M.mason = {
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
-    "deno",
+    -- "deno",
+    "dockerfile-language-server",
+    "gopls",
+    "vue-language-server",
+
   },
 }
 

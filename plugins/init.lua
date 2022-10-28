@@ -15,6 +15,7 @@ return {
   -- https://github.com/wbthomason/packer.nvim#specifying-plugins
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
+    commit = "e53950f646b0c11624280ee7c4eff97a9e0904f1",
     override_options = overrides.treesitter,
     config = function()
         require("nvim-treesitter.install").prefer_git = true
