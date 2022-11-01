@@ -1,6 +1,8 @@
 local M = {}
 
 M.treesitter = {
+  -- :TSUpdate all
+  -- :TSUpdate
   auto_install = true,
   ensure_installed = {
     "bash",
@@ -32,6 +34,7 @@ M.treesitter = {
 }
 
 M.mason = {
+  -- https://github.com/williamboman/mason-lspconfig.nvim
   ensure_installed = {
     -- lua stuff
     "lua-language-server",
