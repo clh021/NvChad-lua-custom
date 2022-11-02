@@ -3,6 +3,7 @@ local opt=vim.opt
 -- enable number and relative line number
 opt.number = true
 opt.rnu = true
+opt.scrolloff = 8
 
 -- use relativenumber when editing
 autocmd({ "InsertEnter" }, { pattern = { "*" }, command = "set nornu" })
