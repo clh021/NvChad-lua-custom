@@ -7,6 +7,9 @@ M.general = {
   i = {
     ["jk"] = { "<ESC>", "normal node" }
   },
+  v = {
+    ["jk"] = { "<ESC>", "normal node" }
+  },
 }
 
 -- more keybinds!
