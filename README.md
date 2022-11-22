@@ -1,6 +1,13 @@
 # NvChad-lua-custom
 NvChad custom config
 
+## install first
+```bash
+git clone --depth=1 https://github.com/NvChad/NvChad ~/.config/nvim
+git clone --depth=1 https://github.com/clh021/NvChad-lua-custom ~/.config/nvim/lua/custom
+```
+> Maybe you need proxy.
+
 ## quick help
 ```vimCommand
 :checkhealth
