@@ -18,3 +18,10 @@ npm install -g typescript typescript-language-server
 npm install -g vls
 # yaml
 npm install -g yaml-language-server
+# golang <= v1.12
+GO111MODULE=on go install golang.org/x/tools/gopls@v0.7.5
+# golang <= v1.15
+GO111MODULE=on go install golang.org/x/tools/gopls@v0.9.5
+# golang other
+GO111MODULE=on go install golang.org/x/tools/gopls@latest
+
