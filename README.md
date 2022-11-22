@@ -7,6 +7,11 @@ git clone --depth=1 https://github.com/NvChad/NvChad ~/.config/nvim
 git clone --depth=1 https://github.com/clh021/NvChad-lua-custom ~/.config/nvim/lua/custom
 ```
 > Maybe you need proxy.
+```bash
+# error init first, you should clean and setting proxy try again
+rm -rf ~/.local/share/nvim
+rm -rf ~/.cache/nvim
+```
 
 ## quick help
 ```vimCommand
