@@ -48,4 +48,6 @@ return {
 
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
+
+  ["folke/which-key.nvim"] = { disable = false } -- enable && :PackerSync && :PackerCompile
 }
