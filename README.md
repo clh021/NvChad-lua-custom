@@ -503,31 +503,3 @@ M.gitsigns = {
   },
 }
 ```
-
-### i
-
-`<C-b>`    beginning of line
-`<C-e>`    end of line
-> go to  beginning and end
-`<C-h>` = { "<Left>", "move left" },
-`<C-l>` = { "<Right>", "move right" },
-`<C-j>` = { "<Down>", "move down" },
-`<C-k>` = { "<Up>", "move up" },
-> navigate within insert mode
-### n
-`<leader> th` list themes to switch
-`<leader> tt` toggle theme night
-`<leader> ff` find file by filename
-`<leader> b`  new buffer
-`<C-n>` toggle nvimtree
-`<C-x>` escape terminal
-`<TAB>` cycle next buffer
-`<S-TAB>` cycle prev buffer
-`<Bslash>` pick buffer
-`<leader>x` close buffer
-`<leader>/` toggle comment
-`gD`    lsp declaration
-`gd`    lsp definition
-`K`     lsp hover
-`gi`    lsp implementation
-`<leader>/` toggle comment
