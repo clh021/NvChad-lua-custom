@@ -12,7 +12,7 @@ for _, lsp in ipairs(servers) do
   }
 end
 
-
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#vuels
 lspconfig.gopls.setup {
   cmd = {"gopls", "serve"},
   filetypes = {"go", "gomod"},
@@ -25,4 +25,10 @@ lspconfig.gopls.setup {
       staticcheck = true,
     },
   },
+}
+
+lspconfig.gopls.setup {
+  cmd = {"vls"},
+  filetypes = {"vue"},
+  root_dir = lspconfig.util.root_pattern("package.json", "vue.config.js")
 }
