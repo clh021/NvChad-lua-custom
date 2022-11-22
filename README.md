@@ -13,6 +13,11 @@ NvChad custom config
 :silent verbose map
 :redir END
 :pwd
+# How do I get spacevim or spacemacs keybindings in vim?
+keep calm and read :help
+:cd spacemacs
+:vimgrep /map/ **/*.vim
+:cfdo g/map/w >> ~/.vimrc
 ```
 
 ## Install lsp
