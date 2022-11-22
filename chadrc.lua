@@ -2,7 +2,7 @@ local M = {}
 
 M.ui = {
   theme_toggle = { "onedark", "one_light" },
-  theme = "onedark",
+  theme = "one_light",
 }
 
 M.plugins = require "custom.plugins"
