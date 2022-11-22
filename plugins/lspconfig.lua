@@ -3,7 +3,7 @@ local capabilities = require("plugins.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = { "html", "cssls", "tsserver", "clangd" }
+local servers = { "html", "cssls", "tsserver", "clangd", "gopls", "vls", "bashls" }
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
@@ -12,7 +12,6 @@ for _, lsp in ipairs(servers) do
   }
 end
 
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#vuels
 lspconfig.gopls.setup {
   cmd = {"gopls", "serve"},
   filetypes = {"go", "gomod"},
@@ -27,6 +26,7 @@ lspconfig.gopls.setup {
   },
 }
 
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#vuels
 lspconfig.vls.setup {
   cmd = {"vls"},
   filetypes = {"vue"},
@@ -67,4 +67,12 @@ lspconfig.vls.setup {
     --   }
     -- }
   -- }
+}
+
+lspconfig.bashls.setup {
+  cmd = {"bash-language-server", "start"},
+  cmd_env = { GLOB_PATTERN = "*@(.sh|.inc|.bash|.command)" },
+  filetypes = {"sh"},
+  root_dir = lspconfig.util.find_git_ancestor,
+  single_file_support = true,
 }
