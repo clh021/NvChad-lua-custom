@@ -17,6 +17,7 @@ switch() {
     if ! test -f "$binSavePathREAL/bin/node" ; then
         cd "$binSavePathREAL"
         tar -xvzf "$binSaveFileREAL" --strip-components 1
+        rm -f "$binSaveFileREAL"
     fi
 
     # apply bin
