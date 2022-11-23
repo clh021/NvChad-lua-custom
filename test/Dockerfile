@@ -1,8 +1,6 @@
 FROM ubuntu:22.04
-# 以下两个环境变量都不能设置容器初始默认 hostname
+# `HOSTNAME`,`HOST`两个环境变量都不能设置容器初始默认 hostname
 # 只能在运行容器时通过 -h|--hostname 来设置
-ENV HOSTNAME=${HOSTNAME:-NVimTest}
-ENV HOST=${HOSTNAME:-NVimTest}
 RUN apt update \
     && apt install -y curl
 RUN curl -sSL https://gitee.com/clh21/sh/raw/master/mirror.sh | sh
