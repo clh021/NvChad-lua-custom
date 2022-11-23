@@ -8,15 +8,13 @@ RUN apt update \
 RUN curl -sSL https://gitee.com/clh21/sh/raw/master/mirror.sh | sh
 RUN apt update \
     && apt -y upgrade
-#rm -rf ~/.config/nvim
-#rm -rf ~/.local/share/nvim
-#rm -rf ~/.cache/nvim
-#sudo apt install build-essential git nodejs neovim ripgrep
+
+#sudo apt install build-essential git unzip neovim ripgrep
 RUN DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install \
     wget \
     build-essential \
     git \
-    nodejs \
+    unzip \
     ripgrep
 
 # prepare nvim
