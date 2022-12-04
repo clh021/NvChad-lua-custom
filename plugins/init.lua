@@ -15,7 +15,6 @@ return {
   -- https://github.com/wbthomason/packer.nvim#specifying-plugins
   -- overrde plugin configs
   ["nvim-treesitter/nvim-treesitter"] = {
-    commit = "e53950f646b0c11624280ee7c4eff97a9e0904f1",
     override_options = overrides.treesitter,
     config = function()
         require("nvim-treesitter.install").prefer_git = true
@@ -48,6 +47,12 @@ return {
 
   -- remove plugin
   -- ["hrsh7th/cmp-path"] = false,
+  -- press `s` begin search two char to move cersur
+  ["ggandor/leap.nvim"] = {
+    config = function()
+      require("leap").add_default_mappings()
+    end,
+  },
 
   ["folke/which-key.nvim"] = { disable = false } -- enable && :PackerSync && :PackerCompile
 }
